@@ -1,0 +1,11 @@
+<h1 class= "text-center">Our Team</h1>
+<ul class="list-inline text-center">
+  <% data.team.each do |member| %>
+    <li>
+      <h3><%= member.name %></h3>
+      <%= image_tag "#{member.picture}.jpg", class: "img-circle img-medium" %>
+    </li>
+  <% end %>
+</ul>
+
+<h3 class= "text-center"><%= link_to "contact@airbnb.com", "mailto:contact@airbnb.com"%></h3>
